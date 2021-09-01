@@ -19,6 +19,10 @@ public enum ResponseEnum {
 
     //自定义错误
     GET_DATA_NULL_ERROE(-100,"查询积分数据失败"),
+    SAVE_DATA_NULL_ERROE(-99,"添加积分数据失败"),
+    UPDATE_DATA_NULL_ERROE(-98,"修改积分数据失败"),
+    DELETE_DATA_NULL_ERROE(-97,"删除积分数据失败"),
+    ALIYUN_RESPONSE_FAIL(-96,"短信业务响应失败"),
 
     //-1xx 服务器错误
     BAD_SQL_GRAMMAR_ERROR(-101, "sql语法错误"),

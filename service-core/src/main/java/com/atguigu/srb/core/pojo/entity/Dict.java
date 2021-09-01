@@ -49,6 +49,17 @@ public class Dict implements Serializable {
     @TableLogic
     private Boolean deleted;
 
+    @ApiModelProperty(value = "是否包含子节点")
+    @TableField(exist = false)//这个设置会导致在真实的数据库中数据库忽略这一列数据
+    private boolean hasChildren;
+
+    public boolean isHasChildren() {
+        return hasChildren;
+    }
+
+    public void setHasChildren(boolean hasChildren) {
+        this.hasChildren = hasChildren;
+    }
 
     public Long getId() {
         return id;
